@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html {
+    font-size: 100%;
+}
+
+body{ font-family: "M PLUS 1p";
+    line-height: 1.7;
+    color: rgb(218, 120, 23);
+}
+a {
+    text-decoration: none;
+}
+image {
+    max-width: 100%;
+}
+
+
+/*---------HEADER---------*/
+.page_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: seagreen;
+    height: 140px;
+}
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.logo {
+    width: 500px;
+    margin: 10px;
+}
+
+/*--------ナビ----------*/
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #ffffff;
+}
+.main-nav a:hover {
+    color: firebrick;
+}
+
+/*--------背景画像---------*/
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    background-image: url(./images/Topmenu.svg);
+    min-height: 50vh;
+}
+
+/*--------ホームのルーム一覧--------*/
+.roomjoin {
+    display: flex;
+    font-size: 35px;
+    list-style: none;
+
+}
+.roomjoin li {
+    margin-right: 100px;
+}
+
+.button {
+    font-size: 5.5rem;
+    background: rgb(34, 255, 64);
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*ルーム部屋*/
+.roomlog{/*ルーム名を表示するところを消した*/
+    display: none;
+}
+
+/*skyway回し*/
+/* normalize */
+body {
+    margin: 0;
+  }
+  
+  /* global styles */
+  video {
+    background-color: #111;
+    width: 90%;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .note {
+    text-align: center;
+  }
+  
+  .meta {
+    text-align: center;
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  .container {
+   /* margin-left: auto;
+    margin-right: auto;
+    width: 980px;*/
+  }
+
+/* room */
+.room {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 8px;
+    margin: 0 8px;
+  }
+  
+  .room .remote-streams {
+    display: grid;
+    grid-template-columns: 30fr 30fr;
+    gap: 20px;
+    grid-template-rows: auto;
+    background-color: #4bf39fa6;
+  }
+  
+  .room .messages {
+    display: none;
+    background-color: rgba(37, 186, 197, 0.219);
+    min-height: 100px;
+    min-width: 25rem;
+    padding: 8px;
+    margin-top: 0;
+  }
+
+button.bottan1{
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px 30px;
+  }
+

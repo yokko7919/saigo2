@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>最近の悩み事</title>
+    <link rel="stylesheet" href="/style.css">
+    <!---css-->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page_header">
+      <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="高齢者向けビデオチャット"></a></h1>
+      <nav>
+          <ul class="main-nav">
+              <li><a href="roomcreate.html">ルーム作成</a></li>
+              <li><a href="login.html">ログイン</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 id="categori" class="heading">最近の悩み事</h1>
+      <div class="room">
+        <div>
+          <video id="js-local-stream"></video>
+          <!--<span id="js-room-mode"></span>-->  <!--sfu meshとか-->
+          <!--span インフラ要素としてグループ化　スタイルシートで指定するとか-->
+          <!--<input type="text" placeholder="Room Name" id="js-room-id">--><!--悩み-->
+          <input class="roomlog" type="text" placeholder= "Room Name" id="js-room-id">
+
+          <button class="bottan1" onclick="click1()" id="js-join-trigger">参加する</button>
+          <script>
+            function click1() {
+              document.getElementById("js-room-id").value = document.title;//HTMLのタイトルをもってきてる
+            }
+          </script>
+          <button id="js-leave-trigger" class="bottan1"><a href="index.html">離脱する</a></button> <!--強制退却-->
+        </div>
+
+        <div class="remote-streams" id="js-remote-streams"></div>
+
+<!--        <div> チャット
+          <pre class="messages" id="js-messages"></pre>-->
+          <!--<input type="text" id="js-local-text">
+          <button id="js-send-trigger">Send</button>
+        </div>-->
+    </div>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
