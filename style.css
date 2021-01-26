@@ -66,16 +66,17 @@ image {
 /*--------ホームのルーム一覧--------*/
 .roomjoin {
     display: flex;
+    flex-wrap: wrap;
     font-size: 35px;
     list-style: none;
 
 }
 .roomjoin li {
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .button {
-    font-size: 5.5rem;
+    font-size: 5rem;
     background: rgb(34, 255, 64);
     color: #fff;
     border-radius: 10px;
